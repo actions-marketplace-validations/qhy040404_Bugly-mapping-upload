@@ -22,10 +22,3 @@ inputs:
 runs:
   using: docker
   image: 'Dockerfile'
-  env:
-    appid: ${{ inputs.appid }}
-    appkey: ${{ inputs.appkey }}
-    bundleid: ${{ inputs.bundleid }}
-    version: ${{ inputs.version }}
-    platform: ${{ inputs.platform }}
-    inputMapping: ${{ inputs.inputMapping }}
