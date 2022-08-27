@@ -1,0 +1,31 @@
+name: 'Bugly Mapping upload tool'
+description: 'A tool to upload mapping to Bugly'
+inputs:
+  appid:
+    description: 'appid'
+    required: true
+  appkey:
+    description: 'appkey'
+    required: true
+  bundleid:
+    description: 'Android: package name, iOS: Bundle ID'
+    required: true
+  version:
+    description: 'App version'
+    required: true
+  platform:
+    description: 'Android, IOS'
+    required: true
+  inputMapping:
+    description: '(Android) mapping folder'
+    required: false
+runs:
+  using: docker
+  image: 'Dockerfile'
+  env:
+    appid: ${{ inputs.appid }}
+    appkey: ${{ inputs.appkey }}
+    bundleid: ${{ inputs.bundleid }}
+    version: ${{ inputs.version }}
+    platform: ${{ inputs.platform }}
+    inputMapping: ${{ inputs.inputMapping }}
