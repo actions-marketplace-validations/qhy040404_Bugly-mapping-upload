@@ -1,3 +1,3 @@
 #!/bin/bash
 
-java -jar buglyqq-upload-symbol.jar -appid $appid -appkey $appkey -bundleid $bundleid -version $version -platform $platform -inputMapping $inputMapping
+java -jar buglyqq-upload-symbol.jar -appid $INPUT_APPID -appkey $INPUT_APPKEY -bundleid $INPUT_BUNDLEID -version $INPUT_VERSION -platform $INPUT_PLATFORM -inputMapping $INPUT_INPUTMAPPING
