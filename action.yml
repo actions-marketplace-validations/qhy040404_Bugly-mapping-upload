@@ -1,5 +1,6 @@
 name: 'Bugly Mapping upload tool'
 description: 'A tool to upload mapping to Bugly'
+icon: upload
 inputs:
   appid:
     description: 'appid'
