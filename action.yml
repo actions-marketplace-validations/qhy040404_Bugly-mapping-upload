@@ -1,6 +1,5 @@
 name: 'Bugly Mapping upload tool'
 description: 'A tool to upload mapping to Bugly'
-icon: upload
 inputs:
   appid:
     description: 'appid'
@@ -20,6 +19,9 @@ inputs:
   inputMapping:
     description: '(Android) mapping folder'
     required: false
+branding:
+  icon: upload
+  color: gray-dark
 runs:
   using: docker
   image: 'Dockerfile'
